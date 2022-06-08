@@ -68,7 +68,8 @@
 		</header>
 		<main>
 			<div class="cards">
-				<div class="card-single">
+				<a href="<?php echo site_url('/Data/index_divisi1'); ?>">
+				<div class="card-single"> 
 					<div>
 						<h1><?php echo $jumlah_divisi1 ?></h1>
 						<span>OpHar</span>
@@ -76,7 +77,8 @@
 					<div>
 						<span class="las la-clipboard-list"></span>
 					</div>
-				</div>
+				</div></a>
+				<a href="<?php echo site_url('/Data/index_divisi2'); ?>">
 				<div class="card-single">
 					<div>
 						<h1><?php echo $jumlah_divisi2 ?></h1>
@@ -85,7 +87,8 @@
 					<div>
 						<span class="las la-clipboard-list"></span>
 					</div>
-				</div>
+				</div></a>
+				<a href="<?php echo site_url('/Data/index_divisi3'); ?>">
 				<div class="card-single">
 					<div>
 						<h1><?php echo $jumlah_divisi3 ?></h1>
@@ -94,7 +97,8 @@
 					<div>
 						<span class="las la-clipboard-list"></span>
 					</div>
-				</div>
+				</div></a>
+				<a href="<?php echo site_url('/Data/index_divisi4'); ?>">
 				<div class="card-single">
 					<div>
 						<h1><?php echo $jumlah_divisi4 ?></h1>
@@ -103,7 +107,8 @@
 					<div>
 						<span class="las la-clipboard-list"></span>
 					</div>
-				</div>
+				</div></a>
+				<a href="<?php echo site_url('/Data/index_divisi5'); ?>">
 				<div class="card-single">
 					<div>
 						<h1><?php echo $jumlah_divisi5 ?></h1>
@@ -112,7 +117,7 @@
 					<div>
 						<span class="las la-clipboard-list"></span>
 					</div>
-				</div>
+				</div></a>
 			</div>
 		</main>
 	</div>
