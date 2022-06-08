@@ -170,6 +170,10 @@ main {
     grid-gap: 2rem;
     margin-top: 1rem;
 }
+.cards a{
+    text-decoration: none;
+    color: var(--color-dark);
+}
 
 .card-single {
     display: flex;
