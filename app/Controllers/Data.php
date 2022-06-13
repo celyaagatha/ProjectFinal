@@ -406,8 +406,7 @@ class Data extends BaseController
             catch (\Exception $e){
                 echo "<script>alert('Data sudah ada sebelumnya, Data gagal disimpan'); window.location='".base_url('/Data/index_divisi4')."';</script>";
             }
-        }
-        else if($divisi == 5) {
+        } else if($divisi == 5) {
             try
             {
                 $simpan = $this->datalist->simpanData($this->table,$data);
