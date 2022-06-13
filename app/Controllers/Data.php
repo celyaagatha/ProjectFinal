@@ -359,13 +359,13 @@ class Data extends BaseController
             {
                 $simpan = $this->datalist->simpanData($this->table,$data);
                 if($simpan){
-                    echo "<script>alert('Data berhasil disimpan'); window.location='".base_url('/Data/index_divisi1')."';</script>";
-                } else if ($data_name != $data['data_name']){
-                    echo "<script>alert('Data sudah ada sebelumnya'); window.location='".base_url('/Data/index_divisi1')."';</script>";
+                    echo "<script>alert('Data berhasil disimpan'); window.location='".base_url('/Data/index_divisi2')."';</script>";
+                } else if ($data_name == $data['data_name']){
+                    echo "<script>alert('Data sudah ada sebelumnya'); window.location='".base_url('/Data/index_divisi2')."';</script>";
                 }
             }
             catch (\Exception $e){
-                echo "<script>alert('Data sudah ada sebelumnya, Data gagal disimpan'); window.location='".base_url('/Data/index_divisi1')."';</script>";
+                echo "<script>alert('Data sudah ada sebelumnya, Data gagal disimpan'); window.location='".base_url('/Data/index_divisi2')."';</script>";
             }        
         } else if($divisi == 2) {
             try
@@ -373,7 +373,7 @@ class Data extends BaseController
                 $simpan = $this->datalist->simpanData($this->table,$data);
                 if($simpan){
                     echo "<script>alert('Data berhasil disimpan'); window.location='".base_url('/Data/index_divisi2')."';</script>";
-                } else if ($data_name != $data['data_name']){
+                } else if ($data_name == $data['data_name']){
                     echo "<script>alert('Data sudah ada sebelumnya'); window.location='".base_url('/Data/index_divisi2')."';</script>";
                 }
             }
@@ -386,7 +386,7 @@ class Data extends BaseController
                 $simpan = $this->datalist->simpanData($this->table,$data);
                 if($simpan){
                     echo "<script>alert('Data berhasil disimpan'); window.location='".base_url('/Data/index_divisi3')."';</script>";
-                } else if ($data_name != $data['data_name']){
+                } else if ($data_name == $data['data_name']){
                     echo "<script>alert('Data sudah ada sebelumnya'); window.location='".base_url('/Data/index_divisi3')."';</script>";
                 }
             }
@@ -399,20 +399,21 @@ class Data extends BaseController
                 $simpan = $this->datalist->simpanData($this->table,$data);
                 if($simpan){
                     echo "<script>alert('Data berhasil disimpan'); window.location='".base_url('/Data/index_divisi4')."';</script>";
-                } else if ($data_name != $data['data_name']){
+                } else if ($data_name == $data['data_name']){
                     echo "<script>alert('Data sudah ada sebelumnya'); window.location='".base_url('/Data/index_divisi4')."';</script>";
                 }
             }
             catch (\Exception $e){
                 echo "<script>alert('Data sudah ada sebelumnya, Data gagal disimpan'); window.location='".base_url('/Data/index_divisi4')."';</script>";
             }
-        } else if($divisi == 5) {
+        }
+        else if($divisi == 5) {
             try
             {
                 $simpan = $this->datalist->simpanData($this->table,$data);
                 if($simpan){
                     echo "<script>alert('Data berhasil disimpan'); window.location='".base_url('/Data/index_divisi5')."';</script>";
-                } else if ($data_name != $data['data_name']){
+                } else if ($data_name == $data['data_name']){
                     echo "<script>alert('Data sudah ada sebelumnya'); window.location='".base_url('/Data/index_divisi5')."';</script>";
                 }
             }
